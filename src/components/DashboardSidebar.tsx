@@ -26,7 +26,7 @@ const DashboardSidebar = () => {
     <div className="fixed w-64 h-full bg-white border-r border-gray-200 p-4">
       <div className="flex flex-col h-full">
         <div className="mb-8">
-          <h2 className="text-2xl font-bold text-purple-600">Bebidas Dashboard</h2>
+          <h2 className="text-2xl font-bold text-purple-600">Nordil Dashboard</h2>
         </div>
         
         <nav className="flex-1">
