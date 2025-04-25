@@ -22,11 +22,11 @@ export const products: Product[] = [
   },
   {
     id: 3,
-    name: 'Vinho Quinta do Morgado',
-    brand: 'Salton',
-    type: 'Vinho',
-    stock: 75,
-    price: 45.99,
+    name: 'Absolut',
+    brand: 'Pernod Ricard',
+    type: 'Vodka',
+    stock: 20,
+    price: 129.90,
     commission: 8,
   },
 ];
