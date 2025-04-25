@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useNavigate } from 'react-router-dom';
-import { toast } from '@/components/ui/use-toast';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -19,19 +18,12 @@ const Login = () => {
       // Armazenar informação de login (temporário)
       localStorage.setItem('isAuthenticated', 'true');
       
-      toast({
-        title: "Login bem-sucedido",
-        description: "Você será redirecionado para o dashboard.",
-      });
-
       // Redirecionar para o dashboard
       navigate('/');
     } else {
-      toast({
-        title: "Erro de Login",
-        description: "Email ou senha incorretos.",
-        variant: "destructive"
-      });
+      // Optionally, you could add a more accessible error handling method
+      // For example, using an error state to show inline error messages
+      console.error("Login failed: Incorrect email or password");
     }
   };
 
@@ -74,3 +66,4 @@ const Login = () => {
 };
 
 export default Login;
+
