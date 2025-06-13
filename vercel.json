@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/csv",
-      "destination": "/public/csv/feed_target_sp_ce_rs.csv.csv"
+      "destination": "/csv/feed_target_sp_ce_rs.csv.csv"
     }
   ]
 }
